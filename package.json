@@ -1,0 +1,19 @@
+{
+  "name": "maru-spa",
+  "version": "0.1.0",
+  "description": "Maru Spa ecommerce landing page and marketplace automation for Amazon, Walmart, and Alibaba.",
+  "main": "src/automation/marketplace-search.js",
+  "scripts": {
+    "walmart:search": "node src/automation/marketplace-search.js walmart",
+    "amazon:search": "node src/automation/marketplace-search.js amazon",
+    "alibaba:search": "node src/automation/marketplace-search.js alibaba",
+    "site:start": "npx http-server docs -p 8080",
+    "install:playwright": "npx playwright install"
+  },
+  "keywords": ["maru-spa", "ecommerce", "automation", "amazon", "walmart", "alibaba"],
+  "author": "Maru Spa",
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.40.0"
+  }
+}
